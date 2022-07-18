@@ -1,31 +1,14 @@
-import IconsClick from "../../IconsClick";
+import PostHeader from "./Posts/PostHeader";
+import MainPost from "./Posts/MainPost";
+import PostFooter from "./Posts/PostFooter";
 
 function Post(props) {
   return (
     <div className="post">
-        <div className="post-header">
-          <div>
-              <a href={props.userLink}><img src={props.userImg} alt={`ir para o perfil de ${props.altUser}`}/></a>
-              <a href={props.userLink} alt={`ir para o perfil de ${props.altUser}`}><h1>{props.userName}</h1></a>
-          </div>
-          <a href={props.userLink}><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-        </div>
-        <a className="post-media" href={props.postLink}><img src={props.postMedia} alt={props.altPost}/></a>
-        <div className="post-footer">
-          <div className="post-first-line">
-            <div>
-              <IconsClick visibleIcon="heart-outline" class="like" activeIcon="heart"/>
-              <IconsClick visibleIcon="chatbubble-outline" class="normal" activeIcon="chatbubble"/>
-              <IconsClick visibleIcon="paper-plane-outline" class="normal" activeIcon="paper-plane"/>
-            </div>
-            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
-          </div>
-          <div className="post-second-line">
-            <a href={props.visitorLink}><img src={props.visitorImg} alt={`ir para o perfil de ${props.visitorAlt}`}/></a>
-            <p><h2>Curtido por <a href={props.visitorLink}><strong>{props.visitorName}</strong></a> e <a href={`${props.postLink}liked_by/`}><strong>outras {props.numberLikes} pessoas</strong></a></h2></p>
-          </div>     
-        </div>
-      </div>
+        <PostHeader userLink={props.userLink} userImg={props.userImg} altUser={props.altUser} userName={props.userName} />
+        <MainPost postLink={props.postLink} postMedia={props.postMedia} altPost={props.altPost} />
+        <PostFooter visitorLink={props.visitorLink} visitorImg={props.visitorImg} visitorAlt={props.visitorAlt} visitorName={props.visitorName} numberLikes={props.numberLikes} />
+    </div>
   );
 }
 
@@ -68,7 +51,7 @@ export default function Posts() {
       postMedia:"./assets/img/dr-estranho-poster.png",
       altPost:"pôster do filme Doutor Estranho no Multiverso da Loucura",
       visitorLink:"https://www.instagram.com/respondeai/",
-      visitorImg:"https://www.instagram.com/oatila/",
+      visitorImg:"./assets/img/atila-foto.png",
       visitorAlt:"Átila Iamarino",
       visitorName:"oatila",
       numberLikes:"1.254.159"

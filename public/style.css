@@ -83,18 +83,8 @@ header ion-icon {
     color: black;
     font-size: 22px;
 }
-.header-options a ion-icon:last-child, .mobile-header a:nth-child(3) ion-icon:last-child {
-    display: none;
-}
 a ion-icon:hover, ion-icon:hover {
     color: #525252;
-}
-.header-options a:active ion-icon:first-child, mobile-header a:nth-child(3):active ion-icon:first-child {
-    display: none;
-}
-.header-options a:active ion-icon:last-child, mobile-header a:nth-child(3):active ion-icon:last-child {
-    display: flex;
-    color: #000000;
 }
 .instagram-logos {
     width: 146px;
@@ -280,19 +270,20 @@ main {
     color: black;
     font-size: 22px;
 }
-.post-first-line div a ion-icon:last-child {
+.click-icons ion-icon:last-child {
     display: none;
 }
-.post-first-line a:active ion-icon:first-child {
+.click-icons:active ion-icon:first-child {
     display: none;
 }
-.post-first-line a:active ion-icon:last-child {
+.click-icons:active ion-icon:last-child {
     display: flex;
-}
-.post-first-line a:active .normal {
     color: #000000;
 }
-.post-first-line a:active .like {
+.click-icons:active .normal {
+    color: #000000;
+}
+.click-icons:active .like {
     color: red;
 }
 .post-second-line {
