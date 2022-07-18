@@ -83,16 +83,16 @@ header ion-icon {
     color: black;
     font-size: 22px;
 }
-.active-icon {
+.header-options a ion-icon:last-child {
     display: none;
 }
 a ion-icon:hover, ion-icon:hover {
     color: #525252;
 }
-header a:active .visible-icon {
+.header-options a:active ion-icon:first-child {
     display: none;
 }
-header a:active .active-icon {
+.header-options a:active ion-icon:last-child {
     display: flex;
     color: #000000;
 }
