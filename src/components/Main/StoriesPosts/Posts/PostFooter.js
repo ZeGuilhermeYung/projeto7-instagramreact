@@ -6,10 +6,10 @@ export default function PostFooter(props){
       <div className="post-first-line">
         <div>
           <IconsClick visibleIcon="heart-outline" class="like" activeIcon="heart" />
-          <IconsClick visibleIcon="chatbubble-outline" class="normal" activeIcon="chatbubble" />
-          <IconsClick visibleIcon="paper-plane-outline" class="normal" activeIcon="paper-plane" />
+          <IconsClick visibleIcon="chatbubble-outline" activeIcon="chatbubble" />
+          <IconsClick visibleIcon="paper-plane-outline" activeIcon="paper-plane" />
         </div>
-        <IconsClick visibleIcon="bookmark-outline" class="normal" activeIcon="bookmark" />
+        <IconsClick visibleIcon="bookmark-outline" activeIcon="bookmark" />
       </div>
       <div className="post-second-line">
         <a href={props.visitorLink}><img src={props.visitorImg} alt={`ir para o perfil de ${props.visitorAlt}`}/></a>

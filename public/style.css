@@ -1,56 +1,58 @@
 body {
-    background-color: #FAFAFA;
-    font-family: "Roboto", "sans-serif";
+  background-color: #FAFAFA;
+  font-family: "Roboto", "sans-serif";
 }
 
 
 h1 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #262626;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
 }
 h2 {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 }
 h3 {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #139EF2;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #139EF2;
 }
 h4 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #262626;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #262626;
 }
 h5 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8E8E8E;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8E8E8E;
 }
 h6, .options-configs h6 a {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    color: #C7C7C7;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #C7C7C7;
 }
 strong {
-    font-weight: 500;
+  font-weight: 500;
 }
 h1:hover, h2 strong:hover {
-    filter: brightness(180%);
+  cursor: pointer;
+  filter: brightness(180%);
 }
 h1:active, h2 strong:active {
     text-decoration: underline;
 }
 h3:hover {
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
@@ -84,6 +86,7 @@ header ion-icon {
     font-size: 22px;
 }
 a ion-icon:hover, ion-icon:hover {
+    cursor: pointer;
     color: #525252;
 }
 .instagram-logos {
@@ -280,9 +283,6 @@ main {
     display: flex;
     color: #000000;
 }
-.click-icons:active .normal {
-    color: #000000;
-}
 .click-icons:active .like {
     color: red;
 }
@@ -381,7 +381,8 @@ li {
     display: flex;
 }
 .options-configs h6 a:hover {
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .options-configs p {
     margin-bottom: 18px;
@@ -465,16 +466,6 @@ footer {
     }
     footer a {
         font-size: 22px;
-        color: #000000;
-    }
-    footer a ion-icon:last-child {
-        display: none;
-    }
-    footer a:active ion-icon:first-child {
-        display: none;
-    }
-    footer a:active ion-icon:last-child {
-        display: flex;
         color: #000000;
     }
 }

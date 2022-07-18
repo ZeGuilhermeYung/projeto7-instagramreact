@@ -1,26 +1,13 @@
+import IconsClick from "./IconsClick";
+
 export default function Footer() {
   return (
     <footer>
-      <a href="https://www.instagram.com/">
-        <ion-icon name="home"></ion-icon>
-        <ion-icon name="home-outline"></ion-icon>
-      </a>
-      <a href="">
-        <ion-icon name="search"></ion-icon>
-        <ion-icon name="search"></ion-icon>
-      </a>
-      <a href="">
-        <ion-icon name="add-circle-outline"></ion-icon>
-        <ion-icon name="add-circle"></ion-icon>
-      </a>
-      <a href="https://www.instagram.com/accounts/activity/">
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="heart"></ion-icon>
-      </a>
-      <a href="https://www.instagram.com/jovemnerd/">
-        <ion-icon name="person-outline"></ion-icon>
-        <ion-icon name="person"></ion-icon>
-      </a>
+      <IconsClick link="https://www.instagram.com/" visibleIcon="home" activeIcon="home-outline" />
+      <IconsClick visibleIcon="search" activeIcon="search" />
+      <IconsClick visibleIcon="add-circle-outline" activeIcon="add-circle" />
+      <IconsClick link="https://www.instagram.com/accounts/activity/" visibleIcon="heart-outline" activeIcon="heart" />
+      <IconsClick link="https://www.instagram.com/jovemnerd/" visibleIcon="person-outline" activeIcon="person" />
     </footer>
   );
 }
