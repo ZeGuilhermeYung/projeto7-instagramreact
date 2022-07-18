@@ -246,68 +246,68 @@ main {
     font-size: 16px;
     color: #262626;
 }
-.midia-post {
+.post-media {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.midia-post img{
+.post-media img{
     width: 612px;
     height: 612px;
 }
-.midia-post img:hover {
+.post-media img:hover {
     transition: all 0.65s ease-in-out;
     filter: brightness(90%);
     box-shadow: 2px 2px 5px DBDBDB;
 }
-.rodape-post {
+.post-footer {
     height: 76px;
     margin: 0 17px;
 }
-.post-primeira-linha {
+.post-first-line {
     height: 31px;
     margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.post-primeira-linha div {
+.post-first-line div {
     width: 98px;
     display: flex;
     justify-content: space-between;
 }
-.post-primeira-linha ion-icon {
+.post-first-line ion-icon {
     color: black;
     font-size: 22px;
 }
-.post-primeira-linha div a ion-icon:last-child {
+.post-first-line div a ion-icon:last-child {
     display: none;
 }
-.post-primeira-linha a:active ion-icon:first-child {
+.post-first-line a:active ion-icon:first-child {
     display: none;
 }
-.post-primeira-linha a:active ion-icon:last-child {
+.post-first-line a:active ion-icon:last-child {
     display: flex;
 }
-.post-primeira-linha a:active .normal {
+.post-first-line a:active .normal {
     color: #000000;
 }
-.post-primeira-linha a:active .like {
+.post-first-line a:active .like {
     color: red;
 }
-.post-segunda-linha {
+.post-second-line {
     height: 31px;
     margin-bottom: 9px;
     display: flex;
     align-items: center;
 }
-.post-segunda-linha img {
+.post-second-line img {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
 }
-.post-segunda-linha strong {
+.post-second-line strong {
     color: #000000;
 }
 
@@ -343,49 +343,48 @@ aside {
 .my-profile p {
     margin-bottom: 1px;
 }
-.sugestions {
+.suggestions {
     width: 100%;
     margin-bottom: 33px;
 }
-.sugestions > div {
+.suggestions-title {
     height: 15px;
     margin-bottom: 17px;
     display: flex;
     justify-content: space-between;
 }
-.sugestions-title h4, .sugestions-title h5 {
+.suggestions-title h4, .suggestions-title h5 {
     font-weight: 500;
 }
 li {
-    height: 32px;
+    height: 35px;
     margin-bottom: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sugestions-profiles h1 {
+.profile-suggestion h1 {
     width: 160px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.sugestions-profiles {
+.profile-suggestion {
+    height: 100%;
     display: flex;
     align-items: center;
-
 }
-.sugestions-profiles > div {
+.profile-suggestion > div {
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.sugestions-profiles img {
+.profile-suggestion img {
     width: 32px;
-    height: 32px;
+    height: 100%;
     border-radius: 50%;
     margin-top: 6px;
     margin-right: 11px;
-}
-.sugestions-profiles h1 {
-    margin-bottom: 6px;
 }
 .options-configs h6 {
     display: flex;
@@ -454,7 +453,7 @@ footer {
         border-left: none;
         border-radius: 0;
     }
-    .midia-post img{
+    .post-media img{
         width: 100%;
         height: 100%;
     }

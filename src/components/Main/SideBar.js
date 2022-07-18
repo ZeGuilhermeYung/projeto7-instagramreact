@@ -1,4 +1,4 @@
-import Sugestions from "./SideBar/Sugestions.js";
+import Suggestions from "./SideBar/Suggestions.js";
 import OptionsConfig from "./SideBar/OptionsConfig.js";
 
 function MyProfile(props) {
@@ -17,7 +17,7 @@ export default function SideBar() {
   return (
     <aside>
       <MyProfile link="https://www.instagram.com/jovemnerd/" image="./assets/img/Jovem-Nerd.jpg" alt="ir para perfil do Jovem Nerd" username="jovemnnerd" title="Jovem Nerd"/>
-      <Sugestions />
+      <Suggestions />
       <OptionsConfig />
     </aside>
   );
