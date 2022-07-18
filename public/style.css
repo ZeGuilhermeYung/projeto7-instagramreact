@@ -61,7 +61,7 @@ header, header div {
     display: flex;
     align-items: center;
 }
-.main-header, .instagram-logos, .opcoes, .mobile-header {
+.main-header, .instagram-logos, .header-options, .mobile-header {
     justify-content: space-between;
 }
 header {
@@ -83,16 +83,16 @@ header ion-icon {
     color: black;
     font-size: 22px;
 }
-.icone-active {
+.active-icon {
     display: none;
 }
 a ion-icon:hover, ion-icon:hover {
     color: #525252;
 }
-header a:active .icone-padrao {
+header a:active .visible-icon {
     display: none;
 }
-header a:active .icone-active {
+header a:active .active-icon {
     display: flex;
     color: #000000;
 }
@@ -106,21 +106,21 @@ header a:active .icone-active {
 header img {
     width: 103px;
 }
-.pesquisa {
+.search input {
     width: 215px;
     height: 28px;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    justify-content: center;
+    text-align: center;
 }
-.pesquisa p {
+.search input::placeholder {
+    color: #979797;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #979797;
 }
-.opcoes {
+.header-options {
     width: 163px;
 }
 header .mobile-header {
@@ -128,7 +128,7 @@ header .mobile-header {
 }
 
 
-.conteudo {
+main {
     margin-top: 88px;
     display: flex;
     justify-content: center;
@@ -315,7 +315,7 @@ header .mobile-header {
 
 
 
-.sidebar {
+aside {
     width: 293px;
     margin-left: 642px;
     position: fixed;
@@ -323,24 +323,24 @@ header .mobile-header {
     top: 88px;
     z-index: 3;
 }
-.meu-perfil {
+.my-profile {
     height: 103px;
     display: flex;
     align-items: center;
 }
-.meu-perfil img {
+.my-profile img {
     width: 56px;
     height: 56px;
     border-radius: 50%;
     margin-right: 17px;
 }
-.meu-perfil div p:last-child {
+.my-profile div p:last-child {
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
     color: #8E8E8E;
 }
-.meu-perfil p {
+.my-profile p {
     margin-bottom: 1px;
 }
 .sugestoes {
@@ -407,7 +407,7 @@ li {
     .stories-posts {
         margin-right: 0;
     }
-    .conteudo .sidebar {
+    main aside {
         display: none;
     }
     
@@ -427,7 +427,7 @@ li {
         margin: auto 20px;
         justify-content: space-between;
     }
-    .conteudo {
+    main {
         margin-top: 54px;
         margin-bottom: 54px;
     }
