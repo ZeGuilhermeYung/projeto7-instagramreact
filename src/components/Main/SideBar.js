@@ -14,9 +14,11 @@ function MyProfile(props) {
 }
 
 export default function SideBar() {
+  const myProfile = [{link:"https://www.instagram.com/jovemnerd/", image:"./assets/img/Jovem-Nerd.jpg", alt:"ir para perfil do Jovem Nerd", username:"jovemnnerd", title:"Jovem Nerd"}];
+
   return (
     <aside>
-      <MyProfile link="https://www.instagram.com/jovemnerd/" image="./assets/img/Jovem-Nerd.jpg" alt="ir para perfil do Jovem Nerd" username="jovemnnerd" title="Jovem Nerd"/>
+      {myProfile.map(profile => <MyProfile link={profile.link} image={profile.image} alt={profile.alt} username={profile.username} title={profile.title}/>)}
       <Suggestions />
       <OptionsConfig />
     </aside>
