@@ -62,7 +62,7 @@ export default function Posts() {
 
   return (
     <div className="posts">
-      {posts.map((post, index) => <Post key={index} userLink={post.userLink} userImg={post.userImg} altUser={post.altUser} userName={post.userName} postLink={post.postLink} postMedia={post.postMedia} altPost={post.altPost} visitorLink={post.visitorLink} visitorImg={post.visitorImg} visitorAlt={post.visitorAlt} visitorName={post.visitorName} numberLikes={post.numberLikes} />)}
+      {posts.map(post => <Post userLink={post.userLink} userImg={post.userImg} altUser={post.altUser} userName={post.userName} postLink={post.postLink} postMedia={post.postMedia} altPost={post.altPost} visitorLink={post.visitorLink} visitorImg={post.visitorImg} visitorAlt={post.visitorAlt} visitorName={post.visitorName} numberLikes={post.numberLikes} />)}
     </div>
   );
 }
