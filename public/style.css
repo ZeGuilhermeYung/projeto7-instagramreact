@@ -284,8 +284,15 @@ main {
     display: flex;
     color: #000000;
 }
-.click-icons:active .like {
-    color: red;
+.click-icons.like.active ion-icon:first-child {
+  display: none;
+}
+.click-icons.like.active ion-icon:last-child {
+  display: flex;
+  color: red;
+}
+.click-icons.like.active:hover ion-icon:last-child {
+  color: red;
 }
 .post-second-line {
     height: 31px;

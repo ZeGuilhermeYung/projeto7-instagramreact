@@ -1,11 +1,12 @@
 import IconsClick from "../../../IconsClick";
+import React from 'react';
 
 export default function PostFooter(props){
   return (
     <div className="post-footer">
       <div className="post-first-line">
         <div>
-          <IconsClick visibleIcon="heart-outline" class="like" activeIcon="heart" />
+          <IconsClick class=" like" visibleIcon="heart-outline" activeIcon="heart" />
           <IconsClick visibleIcon="chatbubble-outline" activeIcon="chatbubble" />
           <IconsClick visibleIcon="paper-plane-outline" activeIcon="paper-plane" />
         </div>
