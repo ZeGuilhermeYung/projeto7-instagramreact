@@ -11,7 +11,7 @@ export default function MainHeader() {
       <div className="search">
         <input type="text" placeholder="Pesquisar"/>   
       </div>
-        <div className="header-options">
+      <div className="header-options">
         <IconsClick link="https://www.instagram.com/direct/inbox/" visibleIcon="paper-plane-outline" activeIcon="paper-plane" alt="enviar mensagem"/>
         <IconsClick link="https://www.instagram.com/explore/" visibleIcon="compass-outline" activeIcon="compass" alt="explorar"/>
         <IconsClick link="https://www.instagram.com/accounts/activity/" visibleIcon="heart-outline" activeIcon="heart" alt="atividades da conta"/>

@@ -387,11 +387,16 @@ li {
 .sugestions-profiles h1 {
     margin-bottom: 6px;
 }
+.options-configs h6 {
+    display: flex;
+}
 .options-configs h6 a:hover {
     text-decoration: underline;
 }
 .options-configs p {
     margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
 }
 footer {
     display: none;
