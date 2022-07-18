@@ -34,7 +34,7 @@ h5 {
     line-height: 14px;
     color: #8E8E8E;
 }
-h6, .opcoes-configuracoes h6 a {
+h6, .options-configs h6 a {
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
@@ -343,17 +343,17 @@ aside {
 .my-profile p {
     margin-bottom: 1px;
 }
-.sugestoes {
+.sugestions {
     width: 100%;
     margin-bottom: 33px;
 }
-.sugestoes > div {
+.sugestions > div {
     height: 15px;
     margin-bottom: 17px;
     display: flex;
     justify-content: space-between;
 }
-.sugestoes-titulo h4, .sugestoes-titulo h5 {
+.sugestions-title h4, .sugestions-title h5 {
     font-weight: 500;
 }
 li {
@@ -363,37 +363,37 @@ li {
     align-items: center;
     justify-content: space-between;
 }
-.sugestoes-perfis h1 {
+.sugestions-profiles h1 {
     width: 160px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.sugestoes-perfis {
+.sugestions-profiles {
     display: flex;
     align-items: center;
 
 }
-.sugestoes-perfis > div {
+.sugestions-profiles > div {
     flex-direction: column;
     justify-content: space-between;
 }
-.sugestoes-perfis img {
+.sugestions-profiles img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-top: 6px;
     margin-right: 11px;
 }
-.sugestoes-perfis h1 {
+.sugestions-profiles h1 {
     margin-bottom: 6px;
 }
-.opcoes-configuracoes h6 a:hover {
+.options-configs h6 a:hover {
     text-decoration: underline;
 }
-.opcoes-configuracoes p {
+.options-configs p {
     margin-bottom: 18px;
 }
-.barra-inferior {
+footer {
     display: none;
 }
 
@@ -453,7 +453,7 @@ li {
         width: 100%;
         height: 100%;
     }
-    .barra-inferior {
+    footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -468,17 +468,17 @@ li {
         right: 0;
         z-index: 4;
     }
-    .barra-inferior a {
+    footer a {
         font-size: 22px;
         color: #000000;
     }
-    .barra-inferior a ion-icon:last-child {
+    footer a ion-icon:last-child {
         display: none;
     }
-    .barra-inferior a:active ion-icon:first-child {
+    footer a:active ion-icon:first-child {
         display: none;
     }
-    .barra-inferior a:active ion-icon:last-child {
+    footer a:active ion-icon:last-child {
         display: flex;
         color: #000000;
     }
