@@ -1,25 +1,29 @@
 import PostHeader from "./Posts/PostHeader";
 import MainPost from "./Posts/MainPost";
 import PostFooter from "./Posts/PostFooter";
+import React from 'react';
 
 function Post(props) {
+
+  const [like, setLike] = React.useState("click-icons like");
+
   return (
     <div className="post">
         <PostHeader userLink={props.userLink} userImg={props.userImg} altUser={props.altUser} userName={props.userName} />
-        <MainPost postLink={props.postLink} postMedia={props.postMedia} altPost={props.altPost} />
-        <PostFooter visitorLink={props.visitorLink} visitorImg={props.visitorImg} visitorAlt={props.visitorAlt} visitorName={props.visitorName} numberLikes={props.numberLikes} />
+        <MainPost like={like} setLike={setLike} postMedia={props.postMedia} altPost={props.altPost} />
+        <PostFooter like={like} setLike={setLike} visitorLink={props.visitorLink} visitorImg={props.visitorImg} visitorAlt={props.visitorAlt} visitorName={props.visitorName} numberLikes={props.numberLikes} />
     </div>
   );
 }
 
 export default function Posts() {
+
   const posts = [
     {
       userLink:"https://www.instagram.com/meowed/",
       userImg:"./assets/img/meowed-logo.jpeg",
       altUser:"Meowed",
       userName:"meowed",
-      postLink:"https://www.instagram.com/p/CeTqGa9suvB/",
       postMedia:"./assets/img/gato-telefone.jpeg",
       altPost:"gato olhando um telefone",
       visitorLink:"https://www.instagram.com/respondeai/",
@@ -33,7 +37,6 @@ export default function Posts() {
       userImg:"./assets/img/Barked-logo.jpeg",
       altUser:"Barked",
       userName:"barked",
-      postLink:"https://www.instagram.com/p/Cea2J5OPSGB/",
       postMedia:"./assets/img/cachorro-relaxado.jpeg",
       altPost:"cachorro relaxado",
       visitorLink:"https://www.instagram.com/adorable___animals/",
@@ -47,7 +50,6 @@ export default function Posts() {
       userImg:"./assets/img/nerbunker-logo.jpg",
       altUser:"Nerd Bunker",
       userName:"nerdbunker",
-      postLink:"https://www.instagram.com/p/Cd0-Tvus-10/",
       postMedia:"./assets/img/dr-estranho-poster.png",
       altPost:"pôster do filme Doutor Estranho no Multiverso da Loucura",
       visitorLink:"https://www.instagram.com/respondeai/",
@@ -60,7 +62,7 @@ export default function Posts() {
 
   return (
     <div className="posts">
-      {posts.map(post => <Post userLink={post.userLink} userImg={post.userImg} altUser={post.altUser} userName={post.userName} postLink={post.postLink} postMedia={post.postMedia} altPost={post.altPost} visitorLink={post.visitorLink} visitorImg={post.visitorImg} visitorAlt={post.visitorAlt} visitorName={post.visitorName} numberLikes={post.numberLikes} />)}
+      {posts.map((post, index) => <Post key={index} userLink={post.userLink} userImg={post.userImg} altUser={post.altUser} userName={post.userName} postLink={post.postLink} postMedia={post.postMedia} altPost={post.altPost} visitorLink={post.visitorLink} visitorImg={post.visitorImg} visitorAlt={post.visitorAlt} visitorName={post.visitorName} numberLikes={post.numberLikes} />)}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function PostFooter(props){
     <div className="post-footer">
       <div className="post-first-line">
         <div>
-          <IconsClick class=" like" visibleIcon="heart-outline" activeIcon="heart" />
+          <IconsClick like={props.like} setLike={props.setLike} class=" like" visibleIcon="heart-outline" activeIcon="heart" />
           <IconsClick visibleIcon="chatbubble-outline" activeIcon="chatbubble" />
           <IconsClick visibleIcon="paper-plane-outline" activeIcon="paper-plane" />
         </div>

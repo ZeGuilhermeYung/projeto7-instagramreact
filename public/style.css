@@ -246,6 +246,7 @@ main {
     justify-content: center;
 }
 .post-media img{
+    cursor: pointer;
     width: 612px;
     height: 612px;
 }
